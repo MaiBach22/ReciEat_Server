@@ -1,0 +1,22 @@
+{
+  "development": {
+    "url": "postgres://mrrmdptnamizet:c33960da11ecb65cdd40dadcb163dc52941e395d67f8fd367bd7856d1a2d4931@ec2-35-168-194-15.compute-1.amazonaws.com:5432/dnaha8i0g1dh4",
+
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "use_env_variable": "DATABASE_URL",
+    "dialectOptions": {
+      "ssl": {
+        "rejectUnauthorized": false
+      }
+    }
+  }
+}
